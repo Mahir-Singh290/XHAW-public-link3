@@ -1,0 +1,372 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1E293B;
+    background-color: white;
+}
+
+/* Controls the main content width */
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Responsive image */
+.profile-image {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+    background: linear-gradient(
+        135deg,
+        #1E293B,
+        #2563eb
+    );
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+header p {
+    max-width: 700px;
+    margin: 1rem auto;
+    color: #dbeafe;
+}
+
+/* Navigation - Forced Horizontal Layout on All Screens */
+.main-nav, header nav, nav {
+    background-color: #1E293B;
+    padding: 1rem;
+    width: 100%;
+}
+
+.main-nav h2,  nav h2 {
+    display: none;
+}
+
+.main-nav ul,  header nav ul, nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li,  header nav li, nav li {
+    display: inline-block;
+    margin: 0;
+    color: white;
+}
+
+.main-nav a,  header nav a, nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Section */
+section {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #1E293B;
+    border-bottom: 0.15rem solid #2563eb;
+    padding-bottom: 0.15rem;
+    margin-bottom: 1rem;
+}
+
+/* Cards */
+.card, .info-card {
+    background: white;
+    border: 3px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    animation: sildeUp 0.8s ease-out;
+}
+
+.info-card h2 {
+    color: #1E293B;
+    margin-top: 0;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: darkcyan;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: darkcyan;
+}
+
+/* Contact Form & Form Elements */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+/* Buttons with #16A34A background, white text, and borders */
+.contact-form button, button {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #16A34A;
+    border-radius: 8px;
+    background-color: #16A34A;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2563eb;
+    color: greenyellow;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: rgb(255, 6, 6);
+}
+
+/* Button Controls & Interactions */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #15803d;
+    border-color: #15803d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* Map Design */
+#map{
+    height: 500px;
+    width: 100%;
+
+    border-radius: 12px;
+    border: 3px solid white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    /*Enterance Animation*/
+    animation: sildeUp 1s ease-out;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes sildeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Pseudo-Classes */
+.main-nav a:hover,
+ header nav a:hover,
+  nav a:hover {
+    background-color: chartreuse;
+    color: #1E293B;
+    border-radius: 0.3rem;
+}
+
+.main-nav a:focus,
+ header nav a:focus,
+  nav a:focus {
+    outline: 0.2rem solid #2563eb;
+}
+
+.main-nav a:active,
+ header nav a:active,
+  nav a:active {
+    background-color: blue;
+    color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1d4ed8;
+    outline: 0.15rem solid #93c5fd;
+}
+
+.contact-form button:hover {
+    transform: scale(0.98);
+}
+
+#projects a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 900px) {
+   
+    .main-nav ul, #Main Navigation ul, header nav ul, nav ul {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    .profile-image {
+        width: 10rem;
+    }
+
+    /* Keeping navigation horizontal or wrapped cleanly on mobile as requested */
+    .main-nav ul,
+      header nav ul, 
+      nav ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    main {
+        width: 95%;
+        padding: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form button, button {
+        width: 100%;
+    }
+}

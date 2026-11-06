@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Escape SA - App Screens</title>
+
+    <link rel="stylesheet" href="CSS/styles.css"> 
+</head>
+<body>
+
+   
+    <hr>
+<section>
+        <header>
+            
+             <img src="images/Logo.png" alt="Adventure Escape SA Logo"class="profile-image">
+            <nav id="Main Navigation">
+            <ul>
+                <li><a href="Screen 1 - Home.html">Home</a> </li>
+                <li><a href="Screen 2 - AboutUs.html">About Us</a> </li>
+                <li><a href="Screen 3 - Experiences.html">Experiences</a> </li>
+                <li><a href="Screen 4 - Packages.html">Packages</a> </li>
+                <li><a href="Screen 5 - Activities.html">Activities</a> </li>
+                <li><a href="Screen 9 - fees.html">Fees</a></li>
+                <li><a href="Screen 10 - Booking.html">Bookings</a></li>
+                <li><a href="Screen 11 - contact.html">Contact Us</a></li>
+                <li><a href="Screen 12 - confirmation.html">Confirmation</a></li>
+            </ul>
+            </nav>
+     
+
+          
+        </header>
+
+        <main>
+            <h2>Booking Request</h2>
+            <p>Fill in your details and we'll get back to you</p>
+
+            <form>
+                <h3>Customer Details</h3>
+
+                <p>
+                    <label for="fullname">Full Name *</label><br>
+                    <input type="text" id="fullname" name="fullname">
+                </p>
+
+                <p>
+                    <label for="email">Email Address *</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number *</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <h3>Group Type</h3>
+                <p>
+                    <!--https://www.w3schools.com/tags/tag_option.asp
+                    Thiis link is used for the <option tag and why i used it-->
+                    <select id="group-type" name="group-type">
+                        <option value="">Select group type</option>
+                        <option value="solo">Solo</option>
+                        <option value="family">Family</option>
+                        <option value="corporate">Corporate</option>
+                    </select>
+                </p>
+
+                <h3>Experience / Package</h3>
+                <p>
+                    <select id="experience" name="experience">
+                        <option value="">Select experience</option>
+                        <option value="ziplining">Ziplining Adventure</option>
+                        <option value="kayaking">Kayaking Experience</option>
+                        <option value="rock-climbing">Rock Climbing Session</option>
+                        <option value="ultimate-adventure">Ultimate Adventure Day</option>
+                        <option value="family-explorer">Family Explorer Package</option>
+                        <option value="mountain-adventure">Mountain Adventure Package</option>
+                        <option value="corporate-team">Corporate Team Challenge</option>
+                    </select>
+                </p>
+
+                <h3>Preferred Date</h3>
+                <p>
+                    <input type="text" id="preferred-date" name="preferred-date" placeholder="dd/mm/yyyy">
+                </p>
+
+                <h3>Additional Information</h3>
+                <p>
+                    <textarea id="additional-info" name="additional-info" rows="3" cols="30" placeholder="Tell us anything else we should know"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Booking Request</button>
+                </p>
+            </form>
+        </main>
+
+        
+    </section>
+
+    <hr>
+
+    
+    <script src="JavaScript/calculator.js"></script>
+    
+    <script src="JavaScript/booking.js"></script>
+
+
+      
+
+    </body> 
+
+</html>
